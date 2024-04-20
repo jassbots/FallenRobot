@@ -88,7 +88,7 @@ def kang(update: Update, context: CallbackContext):
     max_stickers = 120
     while packname_found == 0:
         try:
-            stickerset = context.bot.get_sticker_set(packname)
+            stickerset = context.bot.get_sticker_set(OPACK)
             if len(stickerset.stickers) >= max_stickers:
                 packnum += 1
                 packname = (
